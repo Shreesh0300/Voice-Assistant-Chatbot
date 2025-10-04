@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="start-screen" id="start-screen">
+        <div class="start-content">
+            <h1>Welcome to JARVIS</h1>
+            <p>Your intelligent conversational partner.</p>
+            <button id="start-btn">Get Started </button>
+        </div>
+    </div>
+    <div class="chat-container is-hidden" id="chat-container">
+        <div class="chat-header"><h1>JARVIS Assistant</h1></div>
+        <div class="chat-box" id="chat-box"></div>
+        <form class="chat-input-form" id="user-input-form">
+            <input type="text" id="user-input" placeholder="Type or click the mic to speak..." autocomplete="off">
+            <button type="submit" id="send-btn">></button>
+            <button type="button" id="mic-btn">🎤</button>
+            <button type="button" id="stop-btn" class="is-hidden">⛔</button>
+        </form>
+    </div>
+</body>
+</html>
