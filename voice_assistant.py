@@ -1,4 +1,4 @@
-import pyttsx3
+import pyttsx3 # pyright: ignore[reportMissingImports]
 import speech_recognition as sr
 
 # Initialize the text-to-speech engine
